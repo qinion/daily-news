@@ -15,7 +15,7 @@ def send_mail(to_addr, subject, content):
     try:
         server = smtplib.SMTP_SSL(mail_host, 465)
         server.login(from_addr, password)
-        server.sendmail(from_addr, [to_addr], msg.as_string())
+        server.sendmail(from_addr, to_addr, msg.as_string())
         server.quit()
         print("Email sent successfully!")
     except Exception as e:
