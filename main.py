@@ -12,3 +12,4 @@ if __name__ == '__main__':
         subject="每日科技新闻日报",
         content=content
     )
+print(f"news_list has {len(news_list)} items")
