@@ -33,7 +33,7 @@ def get_top_news(max_news=20):
                 })
     # 可加自定义排序
     result = []
-        for idx, news in enumerate(news_items[:max_news]):
+    for idx, news in enumerate(news_items[:max_news]):
         item_fmt = (
             f"{idx+1}.【类目】{news['category']}\n"
             f"【标题】{news['title_en']}（{news['title_zh']}）\n"
